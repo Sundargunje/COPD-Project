@@ -5,3 +5,5 @@ scipy
 joblib
 threadpoolctl
 openpyxl
+gunicorn
+
