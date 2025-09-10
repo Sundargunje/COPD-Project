@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPD Health Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 15px;
+            color: white;
+        }
+        h1 {
+            color: #333;
+        }
+        .healthy {
+            color: #008000;
+        }
+        .concerns {
+            color: #FF0000;
+        }
+        p {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+   <header>
+        <h1 id="predictedHeading">COPD Health Result</h1>
+    </header>
+
+    {% if data == 0 %}
+    <h1 class="healthy">The analysis indicates that the patient's lung health is normal.</h1>
+    <p>No signs of lung disease were detected during the examination. Regular check-ups are recommended for ongoing monitoring.</p>
+    {% else %}
+    <h1 class="concerns">The analysis suggests potential concerns with the patient's lung health.</h1>
+    <p>We recommend a thorough examination by a healthcare professional to further assess the situation and determine appropriate next steps.</p>
+    {% endif %}
+    
+    <br><br>
+</div>
+<div>
+    <h2>Explore More:</h2>
+    <p>
+        Curious about my work? <a href="https://sundar-kumar.netlify.app" target="_blank">Visit my portfolio website</a> to see projects, insights, and more!
+    </p>
+</div>
+<div>
+
+
+    <a href=" http://127.0.0.1:5000">  Go back</a>
+</div>
+</body>
+</html>
